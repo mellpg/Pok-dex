@@ -8,11 +8,6 @@ Uma aplicação interativa e moderna desenvolvida para explorar o universo Poké
 
 ---
 
-## 📸 Demonstração
-
-<video src="Pokédex - Google Chrome 2026-07-14 17-12-44.mp4" width="100%" controls</video>
----
-
 ## ✨ Funcionalidades
 
 * 🔍 **Busca Inteligente:** Encontre qualquer Pokémon instantaneamente digitando o seu nome ou o número do ID oficial.
@@ -28,9 +23,12 @@ Uma aplicação interativa e moderna desenvolvida para explorar o universo Poké
 O projeto foi construído utilizando as seguintes tecnologias e ecossistemas:
 
 * **[Python](https://www.python.org/)** - Linguagem base do projeto.
+* **[Django] (https://www.djangoproject.com/)** - Backend
+* **[HTML5] (https://developer.mozilla.org/pt-BR/docs/Web/HTML)** - Frontend
+* **[CSS3] (https://developer.mozilla.org/pt-BR/docs/Web/CSS)** - Frontend
+* **[JavaScript] (https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) - Frontend
 * **[PokeAPI](https://pokeapi.co/)** - API RESTful pública utilizada para obter todos os dados atualizados dos Pokémon.
 * **[Requests](https://requests.readthedocs.io/)** - Biblioteca HTTP para consumo da API.
-* **[Pygame](https://www.pygame.org/) / [Tkinter](https://docs.python.org/3/library/tkinter.html)** *(Ajuste conforme a biblioteca de interface gráfica/som que você usou)* - Para a construção da interface gráfica e reprodução dos efeitos sonoros.
 
 ---
 
