@@ -10,7 +10,7 @@ Uma aplicação interativa e moderna desenvolvida para explorar o universo Poké
 
 ## 📸 Demonstração
 
-![Demonstração do Projeto](assets/demonstracao.gif)
+![Demonstração do Projeto](video/Pokédex-Google Chrome 2026)
 ---
 
 ## ✨ Funcionalidades
