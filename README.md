@@ -9,7 +9,7 @@ Uma aplicação interativa e moderna desenvolvida para explorar o universo Poké
 ---
 ## 🤳🏻 Demonstração 
 
-<video src="poke-demo.mp4" controls width="100%"></video>
+![Demonstração](poke-demo.mp4)
 
 
 ## ✨ Funcionalidades
