@@ -10,7 +10,7 @@ Uma aplicação interativa e moderna desenvolvida para explorar o universo Poké
 
 ## 📸 Demonstração
 
-<video src="
+<video src="Pokédex - Google Chrome 2026-07-14 17-12-44.mp4" width="100%" controls</video>
 ---
 
 ## ✨ Funcionalidades
