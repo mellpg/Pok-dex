@@ -1,0 +1,175 @@
+{% load static %}
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="{% static 'pokedex/style.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ====== NAVBAR (fixa no topo) ====== -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="{% static 'pokedex/poke_logo.png' %}"
+            alt="Pokémon"
+            height="35"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.linkedin.com/in/mel-pereira-3207903a9/"
+                >Linkedin</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/mellpg">Github</a>
+            </li>
+          </ul>
+
+          <div class="header-top">
+            <label class="toggle-wrapper" id="theme-toggle">
+              <input type="checkbox" class="toggle-input" id="theme-checkbox" />
+              <span class="toggle-track">
+                <span class="toggle-thumb"></span>
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ====== CONTAINER PRINCIPAL ====== -->
+    <div class="container">
+      <header class="header">
+        <p class="subtitle"><span>Explore o mundo Pokémon</span></p>
+      </header>
+
+      <main class="main">
+        <div class="search-wrapper">
+          <div class="search-box">
+            <input
+              type="text"
+              id="pokemon-input"
+              placeholder="Nome ou número..."
+              autocomplete="off"
+            />
+            <button id="btn-buscar" class="btn-search">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+              Buscar
+            </button>
+          </div>
+        </div>
+
+        <div id="pokemon-card" class="pokemon-card hidden">
+          <div class="card-header">
+            <span id="pokemon-id" class="pokemon-id">#000</span>
+          </div>
+
+          <div class="pokemon-image-wrapper">
+            <img id="pokemon-img" src="" alt="Pokémon" />
+            <div class="image-glow"></div>
+          </div>
+
+          <h2 id="pokemon-name" class="pokemon-name">—</h2>
+
+          <div class="text-center my-2">
+            <button id="btn-audio" class="btn-audio hidden">
+              <i class="bi bi-volume-up-fill"></i> Ouvir Som
+            </button>
+            <audio id="pokemon-cry"></audio>
+          </div>
+
+          <div id="pokemon-types" class="types-container"></div>
+          <p id="pokemon-description" class="pokemon-description">—</p>
+
+          <div class="card-stats">
+            <div class="stat-item">
+              <span class="stat-label">Altura</span>
+              <span id="pokemon-height" class="stat-value">—</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Peso</span>
+              <span id="pokemon-weight" class="stat-value">—</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="erro-msg" class="error-message hidden">
+          <span class="error-icon">🔍</span>
+          <p>Pokémon não encontrado</p>
+          <span class="error-hint">Tente outro nome ou número</span>
+        </div>
+      </main>
+    </div>
+
+    <footer class="footer bg-body-tertiary py-3">
+      <div class="container-fluid px-4">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="mb-0 small">
+              © 2026 Pokédex · Dados da
+              <a
+                href="https://pokeapi.co"
+                target="_blank"
+                class="text-decoration-none"
+                >PokéAPI</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="{% static 'pokedex/app.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
