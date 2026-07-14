@@ -8,7 +8,7 @@ Uma aplicação interativa e moderna desenvolvida para explorar o universo Poké
 
 ---
 ## 🤳🏻 Demonstração 
-![Demonstração](./poke-demo.gif)
+![Demonstração](./poke-demo-ezgif.gif)
 
 
 
