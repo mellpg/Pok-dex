@@ -8,7 +8,7 @@ Uma aplicação interativa e moderna desenvolvida para explorar o universo Poké
 
 ---
 ## 🤳🏻 Demonstração 
-<video src="https://github.com/mellpg/Pok-dex/raw/main/poke-demo.mp4" autoplay loop muted playsinline width="100%"></video>
+![Demonstração](./poke-demo.gif)
 
 
 
