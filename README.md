@@ -19,6 +19,7 @@ Uma aplicação interativa e moderna desenvolvida para explorar o universo Poké
 * 🔊 **Áudio Integrado:** Ouça o som/grito original (cry) do Pokémon ao abrir a sua carta de informações.
 * 📊 **Status Detalhados:** Exibição clara das estatísticas base (HP, Ataque, Defesa, Velocidade, etc.) através de barras visuais.
 * 🏷️ **Tipos e Descrições:** Lista os tipos do Pokémon com badges estilizadas e exibe a descrição oficial extraída dos jogos.
+* 👊🏻**Conferir às Mega evoluções:** Lista as mega evolucoes e as renderiza em sua tela.
 
 ---
 
