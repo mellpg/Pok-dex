@@ -7,6 +7,10 @@
 Uma aplicação interativa e moderna desenvolvida para explorar o universo Pokémon. Esta Pokédex consome dados em tempo real diretamente da **PokeAPI**, oferecendo uma experiência rica com recursos visuais dinâmicos, efeitos sonoros e detalhes profundos de cada criatura.
 
 ---
+## 🤳🏻 Demonstração 
+
+<video src="Pokédex - Google Chrome 2026-07-14 17-12-44.mp4" controls width="100%"></video>
+
 
 ## ✨ Funcionalidades
 
