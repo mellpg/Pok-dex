@@ -1,27 +1,28 @@
-# Created by venv; see https://docs.python.org/3/library/venv.html
-*
-
+# Ambientes Virtuais
 venv/
 .venv/
 ENV/
+env/
 
-
+# Python (Arquivos compilados)
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-*$py.class
 
-
+# Banco de dados local (Para não subir seu banco de teste)
 *.sqlite3
 
-
+# Arquivos do Sistema Operacional
 .DS_Store
+Thumbs.db
 
-
+# Pastas de IDEs/Editores
 .vscode/
 .idea/
 
-
-*.log
+# Arquivos estáticos gerados no deploy
 staticfiles/
+
+# Logs
+*.log

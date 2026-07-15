@@ -12,6 +12,8 @@
   const btnAudio = document.getElementById("btn-audio");
   const pokemonCry = document.getElementById("pokemon-cry");
   const pokemonDescription = document.getElementById("pokemon-description");
+  const btnMega = document.getElementById("btn-mega");
+  let nomeMegaDisponivel = null; // Guarda o nome da evolução se houver
 
   // Dicionário de cores para cada tipo de Pokémon
   const coresTipos = {
@@ -147,6 +149,32 @@
       span.className = `type-badge type-${typeName}`;
       span.textContent = typeName;
       pokemonTypes.appendChild(span);
+
+
+      const listaMegas = {
+        "charizard": "charizard-mega-x",
+        "mewtwo": "mewtwo-mega-x",
+        "gengar": "gengar-mega",
+        "lucario": "lucario-mega",
+        "gyarados": "gyarados-mega",
+        "blaziken": "blaziken-mega"
+      };
+  
+      const nomeAtual = pokemon.name.toLowerCase();
+  
+      if (listaMegas[nomeAtual]) {
+        nomeMegaDisponivel = listaMegas[nomeAtual];
+        btnMega.textContent = "🧬";
+        btnMega.classList.remove("hidden");
+      } else if (nomeAtual.includes("-mega")) {
+        
+        nomeMegaDisponivel = nomeAtual.split("-mega")[0];
+        btnMega.textContent = "↩️";
+        btnMega.classList.remove("hidden");
+      } else {
+        btnMega.classList.add("hidden");
+      }
+
     });
   }
   function limparCard() {
@@ -157,8 +185,8 @@
     pokemonTypes.innerHTML = "";
     pokemonHeight.textContent = "—";
     pokemonWeight.textContent = "—";
+    btnMega.classList.add("hidden");
 
-    // ADICIONADO: Limpa os novos campos
     pokemonDescription.textContent = "—";
     btnAudio.classList.add("hidden");
     pokemonCard.style.backgroundColor = "var(--color-bg)";
@@ -186,4 +214,17 @@
   btnAudio.addEventListener("click", () => pokemonCry.play());
   loadTheme();
   buscarPokemon("pikachu");
+  btnMega.addEventListener("click", () => {
+    if (nomeMegaDisponivel) {
+      buscarPokemon(nomeMegaDisponivel);
+    }
+  });
+
+  btnMega.addEventListener("click", function(e) {
+    e.stopPropagation(); // Evita conflitos
+    if (nomeMegaDisponivel) {
+      buscarPokemon(nomeMegaDisponivel);
+    }
+  });
+
 })();
