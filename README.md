@@ -49,7 +49,7 @@ Antes de começar, certifique-se de que tem o **Python 3.8+** e o **Git** instal
 
 1. **Clone o repositório:**
    ```bash
-   git clone [https://github.com/mellpg/Pok-dex.git](https://github.com/mellpg/Pok-dex.git)
+   git clone [https://github.com/mellpg/Pok-dex.git)
 2. **Instale as dependências necessárias:**
    ```bash
    pip install -r requirements.txt
